@@ -2,9 +2,7 @@
   <div id="app">
     <Navbar />
     <nav class="main-nav">
-      <div class="logo">
-        Dept. of Space, Govt. of India
-      </div>
+      <div class="logo"></div>
       <Burger />
     </nav>
 
@@ -15,13 +13,10 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </Sidebar>
-    <img alt="nesac logo" src="./assets/nesac-logo.png" />
-    <HelloWorld msg="Welcome to RS/GIS" />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import Navbar from "./components/Navbar.vue";
 import Burger from "./components/Menu/Burger.vue";
 import Sidebar from "./components/Menu/Sidebar.vue";
@@ -30,7 +25,6 @@ export default {
   name: "App",
   components: {
     Navbar,
-    HelloWorld,
     Burger,
     Sidebar
   }
@@ -58,12 +52,12 @@ body {
   padding: 0;
   font-family: "Lato";
   height: 100%;
-  background: rgb(101, 31, 87);
+  background: rgb(255, 255, 255);
   background: linear-gradient(
     45deg,
-    rgba(101, 31, 87, 1) 0%,
-    rgba(225, 113, 87, 1) 48%,
-    rgba(249, 248, 113, 1) 100%
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 48%,
+    rgb(255, 255, 255) 100%
   );
 }
 
