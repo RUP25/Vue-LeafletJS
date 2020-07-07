@@ -1,8 +1,13 @@
 <template>
-  <div>
+  <div class="topnav" style="top :0; position: fixed; width: 100%; ">
     <b-navbar toggleable="lg" type="dark" variant="success">
       <b-container>
-        <b-navbar-brand href="http://nesac.gov.in">NESAC</b-navbar-brand>
+        <b-navbar-brand href="http://nesac.gov.in"
+          ><img
+            src="https://www.google.com/url?sa=i&url=https%3A%2F%2Frecruitment.nesdr.gov.in%2Fta_2019%2F&psig=AOvVaw0c19tE26LvJyOSjTyuC1XK&ust=1594190478051000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjil7LEuuoCFQAAAAAdAAAAABAJ"
+            class="d-inline-block align-top"
+          />NESAC</b-navbar-brand
+        >
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
           <!-- Right aligned nav items -->
@@ -22,7 +27,7 @@
                 >Search</b-button
               >
             </b-nav-form>
-            <b-nav-item-dropdown right>
+            <b-nav-item-dropdown right style="overflow: visible;">
               <!-- Using 'button-content' slot -->
               <template slot="button-content"><em>User</em></template>
               <b-dropdown-item href="#">Profile</b-dropdown-item>
