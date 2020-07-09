@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    
     <Navbar />
     <nav class="main-nav">
       <div class="logo"></div>
@@ -11,8 +12,21 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li>
+          <a
+            ><label class="container"
+              >City
+              <input
+                type="checkbox"
+                id="city"
+                name="city"
+                value="City"
+              /> </label
+          ></a>
+        </li>
       </ul>
     </Sidebar>
+    <Map />
   </div>
 </template>
 
@@ -20,13 +34,15 @@
 import Navbar from "./components/Navbar.vue";
 import Burger from "./components/Menu/Burger.vue";
 import Sidebar from "./components/Menu/Sidebar.vue";
+import Map from "./components/map.vue";
 
 export default {
   name: "App",
   components: {
+    Map,
     Navbar,
     Burger,
-    Sidebar
+    Sidebar,
   }
 };
 </script>
